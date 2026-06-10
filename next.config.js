@@ -3,10 +3,7 @@ const nextConfig = {
   output: 'export',
   basePath: '/southernmorocco',
   images: {
-    unoptimized: true, // Required for GitHub Pages
-  },
-  experimental: {
-    appDir: true,
+    unoptimized: true,
   },
 };
 
