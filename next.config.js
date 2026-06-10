@@ -1,13 +1,13 @@
-// next.config.js – Cloudflare Pages adapter
 /** @type {import('next').NextConfig} */
-const { nextOnPages } = require('@cloudflare/next-on-pages');
-
-module.exports = nextOnPages({
-  i18n: {
-    locales: ['en', 'fr', 'ar'],
-    defaultLocale: 'en',
-    localeDetection: false,
+const nextConfig = {
+  output: 'export',
+  basePath: '/southernmorocco',
+  images: {
+    unoptimized: true, // Required for GitHub Pages
   },
-  reactStrictMode: true,
-  experimental: { appDir: true },
-});
+  experimental: {
+    appDir: true,
+  },
+};
+
+module.exports = nextConfig;
